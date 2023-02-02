@@ -1,0 +1,16 @@
+{
+  "name": "test-fidesio",
+  "version": "1.0.0",
+  "description": "Test Fidesio 02 février 2023",
+  "main": "accordeon.js",
+  "scripts": {
+    "start": "http-server",
+    "dev": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "webpack": "^5.75.0"
+  }
+}

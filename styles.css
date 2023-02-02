@@ -1,0 +1,214 @@
+/* ---------- GENERAL ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+
+body {
+	margin: 50px;
+	font-family: 'Roboto', sans-serif;
+    background-color: #F5F4F2;
+}
+
+p {
+    font-weight: 400;
+}
+
+/* ---------- ACCORDEON ---------- */
+
+.section-accordeon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.accordeon {
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.accordeon--blue {
+    background-color: #1184D1;
+}
+.accordeon--blue hr, .accordeon--blue p {
+    color: #CCEAFF;
+}
+
+.accordeon--darkblue {
+    background-color: #0777C2;
+}
+.accordeon--darkblue hr, .accordeon--darkblue p {
+    color: #CCEAFF;
+}
+
+.accordeon--orange {
+    background-color:#EF8451;
+}
+.accordeon--orange hr, .accordeon--orange p {
+    color: #F0DDD3;
+}
+
+.accordeon--darkorange {
+    background-color:#EA6419;
+}
+.accordeon--darkorange hr, .accordeon--darkorange p {
+    color: #F0DDD3;
+}
+
+.accordeon__content {
+    height: 50vh;
+    justify-content: space-between;
+}
+
+.content__left {
+    width: 75%;
+}
+
+.content__left h3 {
+    font-weight: 400;
+}
+
+.content__right {
+    width: 20%;
+    text-align: right;
+    
+}
+
+.accordeon--blue .content__right {
+    background-image: url(images/accordeon-bg-1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100% auto;
+}
+
+.accordeon--darkblue .content__right {
+    background-image: url(images/accordeon-bg-2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100% auto;
+}
+
+.accordeon--orange .content__right {
+    background-image: url(images/accordeon-bg-3.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100% auto;
+}
+
+.accordeon--darkorange .content__right {
+    background-image: url(images/accordeon-bg-4.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100% auto;
+}
+
+.button-toggle {
+    cursor: pointer;
+    
+}
+
+.button-toggle + .accordeon__content {
+    display: none;
+}
+
+.button-toggle.open + .accordeon__content {
+    display: flex;
+}
+
+/* Media queries : tablet & desktop */
+@media only screen and (min-width : 768px) {
+    .content__left {
+        width: 40%;
+    }
+
+    .content__left h2 {
+        margin-bottom: 80px;
+        font-size: 40px;
+
+    }
+    .content__left h3 {
+        margin-bottom: 70px;
+        font-size: 27px;
+
+    }
+    
+    .content__right {
+        width: 55%;
+    }
+}
+
+
+/* ---------- LOGO CLIENTS ---------- */
+
+.section-clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 60px 0;
+}
+
+.section-clients div {
+    width: 30%;
+    margin: 10px 0;
+}
+
+/* Media queries : tablet & desktop */
+@media only screen and (min-width : 768px) {
+    .section-clients div {
+        width: 15%;
+        text-align: center;
+
+    }
+}
+
+/* ---------- PUBLICATIONS ---------- */
+
+
+.section-publications > h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #237FBD;
+    width: 100%;
+}
+
+.section-publications > h2::before {
+    content: url(images/icon-publication.png);
+    margin-right: 10px;
+}
+
+.publications-flex {
+    display: flex;
+}
+
+.big-publication {
+    width: 100%;
+}
+.big-publication h2{
+    transition-duration: 0.5s;
+}
+
+.big-publication h2:hover {
+    color: #237FBD;
+    transition-duration: 0.5s;
+}
+
+.publication-category {
+    float: left;
+    background-color: #00A3FF;
+    color: #fff;
+    padding: 3px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-right: 25px;
+}
+
+.publication-category + p {
+    font-style: italic;
+}
+
+/* Media queries : tablet & desktop */
+@media only screen and (min-width : 768px) {
+    .big-publication {
+        width: 60%;
+    }
+}

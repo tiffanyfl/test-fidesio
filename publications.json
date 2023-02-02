@@ -1,0 +1,24 @@
+[
+    {
+        "id" : 1,
+        "titre" : "Rencontre avec Pauline, Bintia et Emilie",
+        "image" : "images/publications/rencontre.png",
+        "categorie" : "Audit",
+        "date" : "15 septembre 2021"
+    },
+    {
+        "id" : 2,
+        "titre" : "Cyber Stress : une grande étude sur le stress des Responsables Cyber",
+        "resume" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus orci a quam venenatis laoreet non eu massa.",
+        "categorie" : "Audit",
+        "date" : "15 septembre 2021"
+    },
+    {
+        "id" : 3,
+        "titre" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "resume" : "Une opération inédite qui ouvre la voie à un nouveau modèle d’entreprise à impact sociétal...",
+        "image" : "images/publications/capza.png",
+        "categorie" : "Audit",
+        "date" : "17 juin 2021"
+    }
+]
